@@ -11,7 +11,7 @@ const Login = () => {
 
     const [signInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth);
 
-    const [signInWithGoogle] = useSignInWithGoogle(auth);
+    const [signInWithGoogle, user2] = useSignInWithGoogle(auth);
 
     const navigate = useNavigate();
     const location = useLocation();
@@ -23,8 +23,8 @@ const Login = () => {
     const handlePasswordBlur = event => {
         setPassword(event.target.value)
     }
-
-    if (user) {
+    
+    if (user || user2) {
         navigate(from, {replace : true})
     }
 

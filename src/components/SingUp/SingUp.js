@@ -10,7 +10,7 @@ const SingUp = () => {
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
     const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
-    const [signInWithGoogle] = useSignInWithGoogle(auth);
+    const [signInWithGoogle, user2] = useSignInWithGoogle(auth);
 
     const navigate = useNavigate();
 
@@ -24,7 +24,7 @@ const SingUp = () => {
         setConfirmPassword(event.target.value);
     }
     
-    if(user){
+    if(user || user2){
         navigate('/shop')
     }
     const handleCreateUser = event  =>{
@@ -65,7 +65,7 @@ const SingUp = () => {
                     <div></div><p>or</p><div></div>
                 </div>
 
-                <button onClick={signInWithGoogle} className='google-container'>
+                <button onClick={() =>signInWithGoogle()} className='google-container'>
                     <img src={GoogleLogo} alt='' />
                     <p> Continue with Google </p>
                 </button>
