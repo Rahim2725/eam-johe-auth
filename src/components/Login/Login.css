@@ -1,0 +1,98 @@
+.form-container {
+    width: 500px;
+    margin: 30px auto;
+    background: #FFFFFF;
+    border: 1px solid #95A0A7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    box-shadow: -10px 10px  #FFE0B3;
+}
+
+.form-title {
+    font-size: 35px;
+    color: #2A414F;
+    font-weight: 400;
+    text-align: center;
+}
+
+.input-group{
+    margin-bottom: 20px;
+}
+.input-group label {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #2A414F;
+    margin: 10px 5px;
+
+}
+
+.input-group input {
+    width: 415px;
+    height: 55px;
+    border: 1px solid #95A0A7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.login-button {
+    margin-top: 44px;
+    width: 415px;
+    padding: 15px 182px;
+    border: none;
+    background-color: #FF9900;
+    border-radius: 5px;
+    font-size: 21px;
+    font-weight: 400;
+    color: #0E161A;
+    cursor: pointer;
+}
+.form-link-container{
+    color: #2A414F;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 9px;
+}
+.form-link{
+    text-decoration: none;
+    color:#FF9900;
+}
+.or-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.or-container div{
+    width: 145px;
+    border-top: 1px solid #95A0A7 ;
+
+}
+.or-container p{
+    font-size: 17px;
+    margin: 0 20px;
+    color: #95A0A7;
+}
+.google-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 415px;
+    padding: 12px 0px;
+    border: 1px solid #95A0A7;
+    background-color: white;
+    margin-bottom: 40px;
+}
+.google-container img{
+    margin-right: 10px;
+}
+.google-container p{
+    font-size: 17px;
+    color: #2A414F;
+}
